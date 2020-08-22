@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTAuth_ASPCore", "JWTAuth_ASPCore\JWTAuth_ASPCore.csproj", "{BCE88480-8D08-433F-AEE8-E3E0CFAE45C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE88480-8D08-433F-AEE8-E3E0CFAE45C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE88480-8D08-433F-AEE8-E3E0CFAE45C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE88480-8D08-433F-AEE8-E3E0CFAE45C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE88480-8D08-433F-AEE8-E3E0CFAE45C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
