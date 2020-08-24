@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Events;
 
 namespace JWTAuth_ASPCore
 {
@@ -24,7 +26,8 @@ namespace JWTAuth_ASPCore
                 Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Information()
                 .MinimumLevel.Override("SerilogDemo", LogEventLevel.Information)
-                .WriteTo.File("Logs/Example.txt")
+                .WriteTo.File("Logs/Example.txt",
+                 outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
                 .CreateLogger();
 
 
