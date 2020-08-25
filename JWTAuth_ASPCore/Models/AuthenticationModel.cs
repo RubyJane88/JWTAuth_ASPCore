@@ -11,6 +11,6 @@ namespace JWTAuth_ASPCore.Models
         public string Email { get; set; }
         public string Token { get; set; }
 
-        public List<string> Roles { get; set; } = new List<string>();
+        public List<string> Roles { get; set; }
     }
 }
