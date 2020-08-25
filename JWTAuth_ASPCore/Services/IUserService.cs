@@ -8,5 +8,6 @@ namespace JWTAuth_ASPCore.Services
     {
         Task<string> Register(RegisterModel model);
         Task<string> RegisterAsync(RegisterModel model);
+        Task<AuthenticationModel> GetTokenAysnc(TokenRequestModel model);
     }
 }

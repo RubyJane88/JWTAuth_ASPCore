@@ -25,6 +25,14 @@ namespace JWTAuth_ASPCore.Controllers
             return Ok(result);
         }
 
+
+
+
+
+
+
+
+
     }
 
 
