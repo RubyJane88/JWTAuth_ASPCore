@@ -1,10 +1,15 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace JWTAuth_ASPCore.Models
 {
     public class AddRoleModel
     {
-        public AddRoleModel()
-        {
-        }
+        [Required]
+        public string Email { get; set; }
+        [Required]
+        public string Password { get; set; }
+        [Required]
+        public string Role { get; set; }
     }
 }

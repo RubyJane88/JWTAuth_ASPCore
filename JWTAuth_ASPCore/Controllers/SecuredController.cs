@@ -13,7 +13,14 @@ namespace JWTAuth_ASPCore.Controllers
         [HttpGet]
         public async Task<IActionResult> GetSecuredData()
         {
-            return Ok("This Secured Data is available only for Authenticated Users.");
+            return Ok("You are authorized. Thanks!");
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Administrator")]
+        public async Task<IActionResult> PostSecuredData()
+        {
+            return Ok("Hello, Admin. This Secured Data is available only for Authenticated Users");
         }
     }
 }

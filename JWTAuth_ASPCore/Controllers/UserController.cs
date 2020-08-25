@@ -26,9 +26,19 @@ namespace JWTAuth_ASPCore.Controllers
         }
 
 
+        [HttpPost("token")]
+        public async Task<IActionResult> GetTokenAsync(TokenRequestModel model)
+        {
+            var result = await _userService.GetTokenAsync(model);
+            return Ok(result);
+        }
 
-
-
+        [HttpPost("addRole")]
+        public async Task<IActionResult> AddRoleAsync(AddRoleModel model)
+        {
+            var result = await _userService.AddRoleAsync(model);
+            return Ok(result);
+        }
 
 
 
@@ -36,6 +46,9 @@ namespace JWTAuth_ASPCore.Controllers
     }
 
 
-
-
 }
+
+
+
+
+
